@@ -17,7 +17,7 @@ class ViewController : UIViewController {
     let questionLable = UILabel()
     let secondLable = UILabel()
     let secondTextField = UITextField()
-    let highLable = UILabel()
+    let heightLable = UILabel()
     let answerButton = UIButton()
     let GRAVITY : Float = 9.81 
     
@@ -56,11 +56,11 @@ class ViewController : UIViewController {
         answerButton.topAnchor.constraint(equalTo: secondTextField.bottomAnchor, constant: 10).isActive = true
         answerButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         
-        highLable.text = nil
-        view.addSubview(highLable)
-        highLable.translatesAutoresizingMaskIntoConstraints = false
-        highLable.topAnchor.constraint(equalTo: answerButton.bottomAnchor, constant: 20).isActive = true
-        highLable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        heightLable.text = nil
+        view.addSubview(hieghtLable)
+        heightLable.translatesAutoresizingMaskIntoConstraints = false
+        heightLable.topAnchor.constraint(equalTo: answerButton.bottomAnchor, constant: 20).isActive = true
+        heightLable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         
     }
     
@@ -68,9 +68,9 @@ class ViewController : UIViewController {
         // show answers 
         let second : Float =  Float(Int(secondTextField.text!)!)
         
-        let high = 100 - 0.5 * GRAVITY * pow(second,2)
+        let height = 100 - 0.5 * GRAVITY * pow(second,2)
         
-        highLable.text = "The high is : \(high) m."
+        heightLable.text = "The height is : \(height) m."
     }
     
     override var prefersStatusBarHidden: Bool {
