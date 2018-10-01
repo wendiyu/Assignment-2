@@ -29,7 +29,7 @@ class ViewController : UIViewController {
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.view = view
         
-        questionLable.text = "Enter the number of second sine the object dropeed in second."
+        questionLable.text = "Enter the number of second sine the object dropped in second."
         view.addSubview(questionLable)
         questionLable.translatesAutoresizingMaskIntoConstraints = false
         questionLable.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
